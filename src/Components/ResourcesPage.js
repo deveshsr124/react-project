@@ -8,16 +8,31 @@ const ResourcesPage = () => {
 		<div>
 			<MainNavbar />
 			<SecondNavbar
-				headertxt="Resources for GRE"
-				firstItem="Study Materials"
-				SecondItem=" Webinars"
+				firstItem="International admissions update"
+				SecondItem=" Videos"
+				ThirdItem="Ebooks"
+				FourthItem="Brochures"
+				FivthItem="Test/Quiz"
 			/>
-			<div className="btn-cont">
-				<div className="btn-holder">Ebook (About Tesla)</div>
-				<div className="btn-holder">Quant Formula List</div>
-				<div className="btn-holder">Grammar Rules</div>
-				<div className="btn-holder">Vocubulary List</div>
+			<div className="resource-holder">
+				<div className="resource-card">
+					<img
+						src="https://www.manyagroup.com/wp-content/themes/manyaV2/image/GMAT_Online-Exam-E-Book-image.jpg"
+						className="card-img"
+					/>
+					<p className="subhead">Gmat online exam </p>
+					<div className="download-res">Download</div>
+				</div>
+				<div className="resource-card">
+					<img
+						src="https://www.manyagroup.com/wp-content/themes/manyaV2/image/GMAT_Online-Exam-E-Book-image.jpg"
+						className="card-img"
+					/>
+					<p className="subhead">Gmat online exam </p>
+					<div className="download-res">Download</div>
+				</div>
 			</div>
+
 			<h2 className="heading">Recommended Universities</h2>
 			<CardList />
 		</div>

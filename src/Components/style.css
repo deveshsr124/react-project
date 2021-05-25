@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -45,7 +47,7 @@
 	color: black;
 }
 .navtext:hover {
-	cursor: default;
+	cursor: pointer;
 }
 
 /* hero text*/
@@ -84,7 +86,6 @@ select {
 	border-radius: 1.3em 1.3em;
 	border: transparent;
 	background-color: rgba(150, 144, 144, 0.849);
-	margin-left: 73%;
 	font-family: 'Balsamiq Sans';
 	font-weight: bold;
 }
@@ -135,6 +136,7 @@ select {
 /* login page*/
 .login-form {
 	margin-top: 10em;
+	width: 100%;
 }
 .hero-login {
 	display: grid;
@@ -154,13 +156,13 @@ select {
 	font-size: 1.3em;
 	border-radius: 1.3em 1.3em;
 	border: transparent;
-	margin-left: 51%;
+	margin-top: 5%;
 	background-color: rgba(150, 144, 144, 0.849);
 	font-family: 'Balsamiq Sans';
 	font-weight: bold;
 }
 
-/*home page*/
+/*resources page*/
 .navbar .nav-menu {
 	width: 100%;
 	display: flex;
@@ -184,11 +186,9 @@ select {
 	justify-content: space-between;
 	align-items: center;
 	width: 50%;
+	margin-left: 20px;
 }
-.headertxt {
-	margin-top: 10px;
-	font-size: 1.4em;
-}
+
 .second-menu > a {
 	color: black;
 }
@@ -211,16 +211,14 @@ select {
 
 .search-box input[type='text'] {
 	padding: 15px !important;
-	background-color: rgb(223, 223, 223) !important;
+	background-color: rgb(236, 236, 236) !important;
 	border-radius: 19px 19px !important;
-
-	box-shadow: 0px 5px 5px 5px rgb(211, 210, 210);
+	border: 0px rgb(236, 236, 236);
+	box-shadow: 0px 7px 7px 7px rgb(211, 210, 210);
 }
 .search-box input[type='text']:focus {
-	box-shadow: 0px 9px 9px 9px whitesmoke;
-	border: 0px rgb(223, 223, 223);
+	box-shadow: 0px 7px 7px 7px rgb(211, 210, 210);
 }
-
 .or-text {
 	margin-top: 40px;
 	text-align: center;
@@ -230,7 +228,9 @@ select {
 .other-text {
 	text-align: center;
 }
-
+.heading {
+	margin-left: 20px;
+}
 /* card */
 .card-cont {
 	margin-top: 50px;
@@ -238,28 +238,185 @@ select {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-left: 10px;
-	margin-right: 30px;
+	margin-right: 70px;
+	width: 100%;
+	overflow-y: scroll;
 }
 
 .card {
-	border-radius: 15px !important;
+	height: 375px !important;
+	width: 360px !important;
+	background: #c4c4c4 !important;
+	border-radius: 20px 20px 20px 20px !important;
+	overflow: hidden;
+	margin-left: 50px !important;
+	margin-bottom: 30px !important;
 }
+
+.card img {
+	height: 254px !important;
+	width: 360px !important;
+	left: 0px;
+	top: 0px;
+	border-radius: 20px 20px 0px 0px !important;
+}
+
 .heading {
-	margin-top: 50px;
-	font-family: 'Balsamiq Sans';
+	margin-top: 20px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 33px;
+}
+.date {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
 }
 
+.description {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: black !important;
+}
 /* rescorces */
-.btn-cont {
-	margin-left: 10px;
+.resource-holder {
+	margin-top: 20px;
+	display: flex;
 }
 
-.btn-holder {
-	padding: 1.5em 5em 1.5em 1em;
-	background-color: rgb(236, 236, 236);
-	margin-bottom: 10px;
-	width: 25%;
-	border-radius: 9px 9px;
-	box-shadow: 0px 5px 5px 5px gray;
+.resource-card {
+	width: 303px;
+	height: 350px;
+	margin-left: 20px;
+	background: #c4c4c4;
+	border-radius: 15px;
+}
+.card-img {
+	height: 213px;
+	width: 301px;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.subhead {
+	font-family: 'Poppins';
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 20px;
+	font-size: 1.2em;
+}
+.download-res {
+	background: #c4c4c4;
+	border: 1px solid #000000;
+	width: 100px;
+	padding: 10px 25px 10px 20px;
+	margin-top: 60px;
+	margin-left: 190px;
+	border-radius: 15px;
+}
+/*home */
+.headerTxt {
+	font-family: 'Fredoka One';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 54px;
+	line-height: 65px;
+	margin-top: 60px;
+	margin-left: 70px;
+}
+
+.subText {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 36px;
+	margin-left: 70px;
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 50px;
+}
+
+.card-1 {
+	width: 402px;
+	height: 132px;
+	background: #c4c4c4;
+	border-radius: 11px;
+}
+
+.card-head {
+	margin-top: 20px;
+	margin-left: 20px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.inside-text {
+	margin-top: 5px;
+	margin-left: 20px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.list-Text {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 36px;
+	margin-left: 70px;
+}
+
+.list-items {
+	margin-left: 100px;
+	font-size: 1.4em;
+	font-weight: 300;
+	font-family: 'Poppins';
+	width: 409px;
+}
+
+.list-items li {
+	margin-top: 15px;
+}
+
+.resources-text {
+	margin-top: 40px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 36px;
+	margin-left: 70px;
+}
+
+.resources-cont {
+	display: flex;
+	flex-direction: row;
+}
+
+.resource-1 {
+	width: 365px;
+	height: 305px;
+	background: #c4c4c4;
+	border-radius: 11px;
+	margin-left: 70px;
 }

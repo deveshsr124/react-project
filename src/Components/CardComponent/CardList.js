@@ -4,11 +4,11 @@ import Card from './Card';
 
 const CardList = () => {
 	return (
-		<div>
-			<span className="card-cont">
+		<React.Fragment>
+			<span className="card-cont ">
 				{Data.map((data) => {
 					return (
-						<div>
+						<div key={data.Id}>
 							<Card
 								name={data.name}
 								location={data.location}
@@ -19,7 +19,7 @@ const CardList = () => {
 					);
 				})}
 			</span>
-		</div>
+		</React.Fragment>
 	);
 };
 

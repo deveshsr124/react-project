@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import Navbar from './NavComponent/Navbar';
+import { Link } from 'react-router-dom';
 
 const RegisterPage = () => {
 	return (
@@ -32,7 +33,9 @@ const RegisterPage = () => {
 			</div>
 			<span>
 				<Button styleBtn="downloadBtn" buttonTxt="Download App" />
-				<Button styleBtn="registerBtn" buttonTxt="Register" />
+				<Link to="/login">
+					<Button styleBtn="registerBtn" buttonTxt="Register" />
+				</Link>
 			</span>
 		</div>
 	);
