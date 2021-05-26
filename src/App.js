@@ -5,6 +5,8 @@ import LoginPage from './Components/LoginPage';
 import Home from './Components/Home';
 import AdmissionServices from './Components/AdmissionServices';
 import ResourcesPage from './Components/ResourcesPage';
+import AskQuestion from './Components/AskQuestion';
+import Progress from './Components/Progress';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -19,7 +21,8 @@ const App = () => {
 					<Route path="/login" component={LoginPage} />
 					<Route path="/home" component={Home} />
 					<Route path="/AdmissionServices" component={AdmissionServices} />
-
+					<Route path="/askQuestion" component={AskQuestion} />
+					<Route path="/progress" component={Progress} />
 					<Route path="/resources" component={ResourcesPage} />
 				</Switch>
 			</div>

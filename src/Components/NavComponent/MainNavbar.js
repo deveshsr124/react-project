@@ -5,25 +5,25 @@ import { Link } from 'react-router-dom';
 const MainNavbar = () => {
 	return (
 		<Navbar divClass="nav-menu">
-			<a className="item" href="/home">
+			<a className="item" href="/home#">
 				Home
 			</a>
 
 			<div className="ui dropdown">
 				Learning Spaces<i className="dropdown icon"></i>
 			</div>
-			<Link to="/resources">
+			<Link to="/resources#">
 				<div className="ui simple dropdown">
 					Resources<i className="dropdown icon"></i>
 				</div>
 			</Link>
-			<a className="item" href="/">
+			<a className="item" href="/progress#">
 				Progress Dashboard
 			</a>
-			<a className="item" href="/AdmissionServices">
+			<a className="item" href="/AdmissionServices#">
 				Admission Services
 			</a>
-			<a className="item" href="/AskQuestions">
+			<a className="item" href="/askQuestion#">
 				Ask a question
 			</a>
 			<i className="far fa-bell"></i>

@@ -8,6 +8,22 @@
 	font-family: 'Balsamiq Sans';
 }
 
+.nav-menu a {
+	font-weight: normal;
+	font-family: Poppins;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.nav-menu a:hover {
+	cursor: pointer;
+}
+
+.nav-menu a:visited,
+a:focus {
+	color: black;
+	font-weight: 800;
+}
 .navbar {
 	background-color: gray;
 	flex: 50%;
@@ -191,9 +207,23 @@ select {
 
 .second-menu > a {
 	color: black;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
 }
 
-.center-text {
+.second-menu > a:visited {
+	color: #000000;
+	font-weight: 800;
+}
+
+.second-menu > a:focus {
+	color: #000000;
+	font-weight: 800;
+}
+.second-menu > .center-text {
 	text-align: center;
 	font-family: 'Balsamiq Sans';
 	font-size: 3em;
@@ -419,4 +449,136 @@ select {
 	background: #c4c4c4;
 	border-radius: 11px;
 	margin-left: 70px;
+}
+
+/* askQuestion */
+
+.centerTxt {
+	width: 652px;
+	height: 94px;
+	margin-top: 20vh;
+	margin-left: 30vw;
+	font-family: Fredoka One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 39px;
+	line-height: 47px;
+
+	color: #000000;
+}
+
+.counselorTxt {
+	width: 583.41px;
+	height: 45px;
+	margin-top: 50vh;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 45px;
+	/* identical to box height */
+
+	color: #000000;
+}
+
+.counselor-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 10px;
+	width: 100%;
+}
+.profiles {
+	height: 196px;
+	width: 500px;
+	left: 0px;
+	top: 0px;
+	border-radius: 20px;
+	margin-right: 10px;
+	background: #c4c4c4;
+}
+
+.profile-pic {
+	height: 147px;
+	width: 147px;
+	margin-top: 30px;
+	margin-left: 20px;
+	border-radius: 0px;
+}
+
+.profile-name {
+	float: right;
+	margin-top: 50px;
+	margin-right: 110px;
+	font-family: Poppins;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.work {
+	height: 48px;
+	width: 240px;
+	margin-right: 10px;
+	float: right;
+	margin-top: -80px;
+}
+
+.experience {
+	float: right;
+	height: 24px;
+	width: 274px;
+	margin-top: -25px;
+	margin-right: -20px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+}
+
+.progress-cont {
+	margin-top: 20px;
+	width: 339px;
+	height: 264px;
+	background: rgba(196, 196, 196, 0.001);
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	margin-left: 20px;
+	border-radius: 19px;
+}
+.progress-bar {
+	margin-top: 20px;
+	margin-left: 80px;
+	margin-right: auto;
+	width: 170px !important;
+}
+
+.progress-header {
+	font-family: Poppins;
+	font-weight: 800;
+	color: #000000;
+	font-size: 18px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.progress-header1 {
+	font-family: Poppins;
+	font-weight: 800;
+	color: #000000;
+	font-size: 18px;
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+.other-progress {
+	float: right;
+	margin-top: -265px;
+	margin-right: 600px;
+	width: 339px;
+	height: 264px;
+	background: rgba(196, 196, 196, 0.001);
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 19px;
 }
