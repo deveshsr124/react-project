@@ -1,24 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './NavComponent/Navbar';
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
-	const [userRegistration, setUserRegistration] = useState({
-		username: '',
-		email: '',
-		password: '',
-	});
 	const handleChange = (e) => {
 		const name = e.target.name;
 		const value = e.target.value;
 		console.log(name, value);
-		setUserRegistration({ ...userRegistration, [name]: value });
 	};
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		localStorage.setItem('document', JSON.stringify(userRegistration));
 	};
 	return (
 		<div>
@@ -42,7 +35,6 @@ const LandingPage = () => {
 							type="text"
 							name="username"
 							placeholder="First Name"
-							value={userRegistration.username}
 							onChange={handleChange}
 						/>
 					</div>
@@ -51,7 +43,6 @@ const LandingPage = () => {
 							type="email"
 							name="email"
 							placeholder="Email Address"
-							value={userRegistration.email}
 							onChange={handleChange}
 						/>
 					</div>
@@ -60,7 +51,6 @@ const LandingPage = () => {
 							type="password"
 							name="password"
 							placeholder="Password"
-							value={userRegistration.password}
 							onChange={handleChange}
 						/>
 					</div>

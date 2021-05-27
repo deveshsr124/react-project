@@ -1,20 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './NavComponent/Navbar';
 import Button from './Button';
 import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
-	const documentData = JSON.parse(localStorage.getItem('document'));
-	const email = JSON.stringify(documentData.email);
-	const password = JSON.stringify(documentData.password);
-	const handleRoute = () => {
-		if (email && password) {
-			return '/home';
-		} else {
-			return '/login';
-		}
-	};
-
 	return (
 		<div>
 			<Navbar />
@@ -35,7 +24,7 @@ const LoginPage = () => {
 						<label>Show password</label>
 					</div>
 					<div>
-						<Link to={handleRoute}>
+						<Link to="/home">
 							<Button styleBtn="loginBtn" buttonTxt="Login" />
 						</Link>
 					</div>
