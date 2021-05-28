@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
 
 const MainNavbar = () => {
 	return (
@@ -9,14 +8,30 @@ const MainNavbar = () => {
 				Home
 			</a>
 
-			<div className="ui dropdown">
+			<div className="ui simple dropdown drop1">
 				Learning Spaces<i className="dropdown icon"></i>
-			</div>
-			<Link to="/resources#">
-				<div className="ui simple dropdown">
-					Resources<i className="dropdown icon"></i>
+				<div className="menu">
+					<div className="item">Coursework</div>
+					<div className="item">Practice Test</div>
+					<div className="item">Resources</div>
 				</div>
-			</Link>
+			</div>
+
+			<div className="ui simple dropdown drop1">
+				Resources<i className="dropdown icon"></i>
+				<div className="menu">
+					<a href="/resources" className="item">
+						International <br />
+						admissions update
+					</a>
+
+					<div className="item">Videos</div>
+					<div className="item">Ebooks</div>
+					<div className="item">Brochures</div>
+					<div className="item">Test / Quiz</div>
+				</div>
+			</div>
+
 			<a className="item" href="/progress#">
 				Progress Dashboard
 			</a>

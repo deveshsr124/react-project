@@ -3,9 +3,8 @@ import React from 'react';
 const SecondNavbar = (props) => {
 	return (
 		<React.Fragment>
-			<p className="headertxt">{props.headertxt}</p>
 			<div className="second-menu">
-				<a href="#" className="item">
+				<a href={props.route} className="item">
 					{props.firstItem}
 				</a>
 				<a href="#" className="item">
@@ -20,8 +19,17 @@ const SecondNavbar = (props) => {
 				<a href="/#" className="item">
 					{props.FivthItem}
 				</a>
+				<a href="/#" className="item ">
+					{props.SixthItem}
+				</a>
+				<a href="/#" className="item ">
+					{props.SeventhItem}
+				</a>
+				<a href="/#" className="item ">
+					{props.EightItem}
+				</a>
 			</div>
-			<div className="ui divider"></div>
+			<hr className="ui divider"></hr>
 		</React.Fragment>
 	);
 };

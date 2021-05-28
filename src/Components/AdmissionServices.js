@@ -3,6 +3,7 @@ import React from 'react';
 import MainNavbar from './NavComponent/MainNavbar';
 import CardList from './CardComponent/CardList';
 import SecondNavbar from './NavComponent/SecondNavbar';
+import SearchBar from './SearchComponent/SearchBar';
 import './style.css';
 import Slider from 'react-slick';
 
@@ -22,21 +23,11 @@ const AdmissionServices = () => {
 				SecondItem="Counselor"
 				ThirdItem="Schedulor"
 				FourthItem="Packages and Services"
+				route="/search"
 			/>
-			<h1 className="center-text">
-				Find your Dream
-				<br /> University or Course
-			</h1>
-			<div className="ui search search-box">
-				<div className="ui left icon input">
-					<i className="search icon"></i>
-					<input
-						className="prompt"
-						type="text"
-						placeholder="Search for University , Course or destination country"
-					/>
-				</div>
-			</div>
+			<h1 className="center-text">Find your Dream University or Course</h1>
+			<SearchBar boxCont="search-box" />
+
 			<div className="or-text">OR</div>
 			<p className="other-text">
 				Connect to our Admission Counselor for free counselling
