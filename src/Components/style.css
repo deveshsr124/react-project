@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -9,6 +10,9 @@
 	font-family: 'Balsamiq Sans';
 }
 
+.nav-menu {
+	width: 98% !important;
+}
 .nav-menu a {
 	font-weight: normal;
 	font-family: Poppins;
@@ -85,6 +89,16 @@ a:focus {
 	line-height: 24px;
 }
 
+.drop2 > .menu {
+	background-color: #c4c4c4 !important;
+	padding: 10px 10px 10px 10px !important;
+}
+.drop2 > .menu > div {
+	font-weight: normal;
+	font-family: Poppins;
+	font-size: 16px;
+	line-height: 24px;
+}
 /* hero text*/
 .hero {
 	display: grid;
@@ -574,12 +588,6 @@ select {
 	margin-left: 20px;
 	border-radius: 19px;
 }
-.progress-bar {
-	margin-top: 20px;
-	margin-left: 80px;
-	margin-right: auto;
-	width: 170px !important;
-}
 
 .progress-header {
 	font-family: Poppins;
@@ -587,7 +595,7 @@ select {
 	color: #000000;
 	font-size: 18px;
 	margin-left: 30px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .progress-header1 {
@@ -596,7 +604,7 @@ select {
 	color: #000000;
 	font-size: 18px;
 	margin-left: 60px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .other-progress {
@@ -894,7 +902,7 @@ select {
 
 .backTo {
 	position: absolute;
-	bottom: 420px;
+	bottom: 450px;
 	left: 10px;
 	background: #c4c4c4;
 	border-radius: 10px 10px 5px 5px;
@@ -976,7 +984,7 @@ select {
 	font-size: 19.1373px;
 	line-height: 29px;
 	/* identical to box height */
-
+	position: fixed;
 	color: #000000;
 	padding: 10px 20px 10px 20px;
 	border: transparent;
@@ -988,11 +996,11 @@ select {
 .detailed-content > h2 {
 	font-family: Poppins;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 800;
 	font-size: 28px;
 	line-height: 42px;
 	/* identical to box height */
-
+	margin-bottom: 50px;
 	color: #000000;
 }
 
@@ -1003,6 +1011,135 @@ select {
 	font-size: 16px;
 	line-height: 26px;
 	/* or 162% */
+	height: 260px;
+	width: 1097px;
+
+	color: #000000;
+}
+
+.column > h1 {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 47.8006px;
+	line-height: 50px;
+	/* identical to box height, or 117% */
+
+	letter-spacing: 0.298753px;
+	margin-left: 30px;
+	color: #b82323;
+}
+
+.column > p {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23.9003px;
+	line-height: 30px;
+	/* identical to box height, or 233% */
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.298753px;
+
+	color: #000000;
+}
+
+.selector-menu {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	background-color: rgb(245, 245, 245);
+	margin-left: 20px;
+	border-radius: 12px;
+	box-shadow: 0px 7px 7px 7px rgb(211, 210, 210);
+	margin-bottom: 60px;
+}
+.selector-menu > .menu-items {
+	padding: 15px 20px 5px 20px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.selector-menu > .menu-items > .item-heading1 {
+	margin-bottom: 0px;
+	width: 90px;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 1.1em;
+	color: black;
+}
+.selector-menu > .menu-items > .cost-item1 {
+	margin-top: 0px;
+	font-family: Roboto;
+	color: #b82323;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.selector-menu > .menu-items > .item-heading {
+	margin-bottom: 0px;
+
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 1.1em;
+	color: black;
+}
+.selector-menu > .menu-items > .cost-item {
+	margin-top: 0px;
+	font-family: Roboto;
+	color: gray;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.details-card {
+	margin-right: 120px;
+	margin-top: 50px;
+}
+.details-card .details-column {
+	height: 240px;
+	width: 200px;
+	background: linear-gradient(
+			147.42deg,
+			rgba(64, 72, 93, 0.4) 6.32%,
+			rgba(96, 106, 130, 0.4) 92.25%
+		),
+		linear-gradient(128deg, #e6e7ed -79.65%, #f7f8fa 151.25%);
+	background-blend-mode: soft-light, normal;
+	box-shadow: -7px -7px 16px #fafbfc, 4px 3px 19px #bdc1d1,
+		inset -1px -1px 16px #f5f6fa, inset 1px 1px 16px #e9eaf2;
+	border-radius: 18px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.details-card .details-column > p {
+	margin-top: 80px;
+	margin-left: 50px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+	color: #000000;
+}
+
+.address {
+	margin-left: 20px;
+}
+.address > p {
+	float: right;
+	margin-right: 330px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
 
 	color: #000000;
 }

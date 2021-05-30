@@ -4,6 +4,7 @@ import MainNavbar from './NavComponent/MainNavbar';
 import CardList from './CardComponent/CardList';
 import SecondNavbar from './NavComponent/SecondNavbar';
 import SearchBar from './SearchComponent/SearchBar';
+
 import './style.css';
 import Slider from 'react-slick';
 

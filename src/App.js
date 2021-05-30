@@ -6,7 +6,7 @@ import Home from './Components/Home';
 import AdmissionServices from './Components/AdmissionServices';
 import ResourcesPage from './Components/ResourcesPage';
 import AskQuestion from './Components/AskQuestion';
-import Progress from './Components/Progress';
+import ProgressPage from './Components/ProgressPage';
 import SearchPage from './Components/SearchPage';
 import Details from './Components/Details';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -25,7 +25,7 @@ const App = () => {
 					<Route path="/details" component={Details} />
 					<Route path="/search" component={SearchPage} />
 					<Route path="/askQuestion" component={AskQuestion} />
-					<Route path="/progress" component={Progress} />
+					<Route path="/progress" component={ProgressPage} />
 					<Route path="/resources" component={ResourcesPage} />
 				</Switch>
 			</div>

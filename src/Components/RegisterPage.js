@@ -30,13 +30,13 @@ const RegisterPage = () => {
 						</select>
 					</div>
 				</form>
+				<span>
+					<Button styleBtn="downloadBtn" buttonTxt="Download App" />
+					<Link to="/login">
+						<Button styleBtn="registerBtn" buttonTxt="Register" />
+					</Link>
+				</span>
 			</div>
-			<span>
-				<Button styleBtn="downloadBtn" buttonTxt="Download App" />
-				<Link to="/login">
-					<Button styleBtn="registerBtn" buttonTxt="Register" />
-				</Link>
-			</span>
 		</div>
 	);
 };
