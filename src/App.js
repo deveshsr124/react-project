@@ -9,6 +9,7 @@ import AskQuestion from './Components/AskQuestion';
 import ProgressPage from './Components/ProgressPage';
 import SearchPage from './Components/SearchPage';
 import Details from './Components/Details';
+import CounselorChat from './Components/CounselorChat';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // eslint-disable-next-line
@@ -25,6 +26,7 @@ const App = () => {
 					<Route path="/details" component={Details} />
 					<Route path="/search" component={SearchPage} />
 					<Route path="/askQuestion" component={AskQuestion} />
+					<Route path="/counselorChat" component={CounselorChat} />
 					<Route path="/progress" component={ProgressPage} />
 					<Route path="/resources" component={ResourcesPage} />
 				</Switch>

@@ -558,6 +558,8 @@ select {
 }
 
 .work {
+	text-decoration: none;
+	color: black;
 	height: 48px;
 	width: 240px;
 	margin-right: 10px;
@@ -1142,4 +1144,8 @@ select {
 	/* identical to box height */
 
 	color: #000000;
+}
+
+.drop2 {
+	margin-right: 5px !important;
 }
